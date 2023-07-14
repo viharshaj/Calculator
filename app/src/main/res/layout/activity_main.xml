@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="30dp"
+        android:layout_weight="1"
+        android:background="@color/grey">
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="40sp"
+            android:textColor="@color/orange"/>
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer"
+            android:gravity="end"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                 android:id="@+id/button_clear"
+                 android:layout_width="match_parent"
+                 android:layout_height="90dp"
+                 android:text="@string/c"
+                 style="@style/Button_style"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_bracket_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/lbrace"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_bracket_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/rbrace"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_divide"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/divide"
+                    style="@style/Button_style"
+                />
+
+        </TableRow>
+
+        <TableRow tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_7"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_8"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_9"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_multiply"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/multiply"
+                    style="@style/Button_style"
+                    />
+
+        </TableRow>
+
+        <TableRow tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_4"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_5"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_6"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_minus"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/minus"
+                    style="@style/Button_style"
+                    />
+
+        </TableRow>
+
+        <TableRow tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_1"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_2"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_3"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/plus"
+                    style="@style/Button_style"
+                    />
+
+        </TableRow>
+
+        <TableRow tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/_0"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_dot"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/dot"
+                    style="@style/Button_style"
+                    />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_equal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/equal"
+                    android:layout_weight="1"
+                    style="@style/Button_style"
+                    />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
